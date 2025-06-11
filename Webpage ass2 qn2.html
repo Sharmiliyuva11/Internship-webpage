@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Multi-Section Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #333;
+        }
+        header {
+            background: #4a148c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: #ffcc00;
+            padding: 10px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #4a148c;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff7e5f;
+        }
+        #about {
+            padding: 50px;
+            background: #fff3e0;
+            text-align: center;
+        }
+        .about-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #services {
+            background: #d1c4e9;
+            padding: 50px;
+            text-align: center;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .service-item {
+            background: #7e57c2;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+        }
+        #showcase {
+            background: #ffecb3;
+            padding: 50px;
+            text-align: center;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        footer {
+            background: #4a148c;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer-item {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section (Float) -->
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-container">
+            <p>We are committed to delivering top-quality services to our clients. Our expertise spans multiple industries, ensuring the best outcomes.</p>
+        </div>
+    </section>
+
+    <!-- Services Section (CSS Grid) -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-item">Web Development</div>
+            <div class="service-item">Graphic Design</div>
+            <div class="service-item">SEO Optimization</div>
+            <div class="service-item">Digital Marketing</div>
+        </div>
+    </section>
+
+    <!-- Showcase Section (CSS Grid) -->
+    <section id="showcase">
+        <h2>Showcase</h2>
+        <div class="gallery-grid">
+            <div class="service-item">Showcase Item 1</div>
+            <div class="service-item">Showcase Item 2</div>
+            <div class="service-item">Showcase Item 3</div>
+            <div class="service-item">Showcase Item 4</div>
+        </div>
+    </section>
+
+    <!-- Footer (Flexbox) -->
+    <footer>
+        <div class="footer-item">&copy; 2025 Our Website</div>
+        <div class="footer-item">Contact: info@ourwebsite.com</div>
+        <div class="footer-item">Follow us on social media</div>
+    </footer>
+</body>
+</html>
